@@ -1,0 +1,28 @@
+{
+        "manifest_version": 2,
+        "name": "Selection, traduction",
+        "version": "0.1",
+        "description": "selectionne & traduit",
+        "homepage_url": "https://github.com/tramber30/select_trad",
+      
+        "background": {
+                "scripts": ["select_trad.js"]
+        },
+        
+        "content_scripts": [{
+                "matches": ["<all_urls>"],
+                "js": ["send_selection.js"]
+        }],
+
+        "permissions": [
+                "contextMenus",
+                "activeTab",
+                "tabs"
+        ], 
+        "icons": {
+                "96": "picture/icon_96.png",
+                "64": "picture/icon_64.png",
+                "48": "picture/icon_48.png"
+        }
+
+} 
