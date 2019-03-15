@@ -1,9 +1,9 @@
 {
         "manifest_version": 2,
         "name": "Selection, traduction",
-        "version": "0.1",
+        "version": "0.11",
         "description": "selectionne & traduit",
-        "homepage_url": "https://github.com/tramber30/select_trad",
+        "homepage_url": "https://github.com/tramber30/select_trad_fire",
       
         "background": {
                 "scripts": ["select_trad.js"]
