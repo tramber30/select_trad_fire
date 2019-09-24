@@ -25,14 +25,14 @@ browser.runtime.onMessage.addListener(updateMenu);
 // Strip any aditional space, word or punctuation from the selection
 // return the first word 
 function getFirstWord(str) {
-        var regex = /[^\w]/g;
         var str_result = str.trim()
-        var index = str_result.search(regex);
+        var word = str_result.split(/\s|!|\(|\)|_|,|\.|;|:|'|"/)[0];
 
-        if (index != -1) {
-                return str_result.slice(0, index);
+        if (word.length > 0) {
+                return word;
         } else {
-                return str_result;
+                console.log("[select_trad.js] getFirstWord: empty string");
+                return "";
         }
 }
 
